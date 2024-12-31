@@ -1,0 +1,159 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color: #FFF;
+    --second-color: #000;
+} 
+
+*{
+    font-family: 'Roboto',Helvetica, sans-serif;
+    color: var(--second-color, #000);
+    transition: 500ms;
+}
+*::selection{
+    background-color: var(--second-color, #FFF);
+    color: var(--main-color, #FFF);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: var(--main-color, #FFF);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    
+    width: 70%;
+    height: 70%;
+    
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%, -10%);
+    
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid  var(--second-color, #000);
+    border-radius: 5px;
+}
+
+#number{ 
+    display: flex;
+    
+    width: 70px;
+    height: 70px;
+    
+    font-size: 12rem;
+    font-weight: 200;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    display: flex;
+    position: absolute;
+
+    width: 2%;
+    height: 4%;
+
+    top: 10px;
+    left: 10px;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+
+    background-color: transparent;
+    border-radius: 12px;
+    border: 3px solid var(--second-color, #000) ;
+    cursor: pointer;
+}
+
+#info{
+    top: 10px;
+    left: 10px;
+}
+
+#themeColor{
+    top: 10px;
+    left: 60px;
+}
+
+#infoPopup{
+    display:none;
+    width: 55%;
+    height: 50%;
+
+    flex-direction: row;
+       
+    padding: 0;
+    padding-top: 10px;
+    margin-top: 5%;
+    
+    border: none;
+    border-radius: 10px;
+    
+    background-color: var(--main-color, #FFF);
+}
+#infoPopup button{
+    font-size: 1.7rem;
+    
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+#infoPopup:focus{
+    outline: none;
+}
+#infoPopup::backdrop{
+    background-color: var(--second-color);
+    opacity: 50%;
+}
+
+#close{
+    display: flex;
+    
+    width: 5%;
+    height: 100%;
+
+    align-items:start;
+    justify-content: center;
+
+}
+
+#comands{
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    height: 100%;
+
+    justify-content: center;
+}
+#comands p{
+    display: flex;
+    
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    
+    justify-content: center;
+}
+#comands h1{
+    display: flex;
+
+    height: 20px;
+
+    justify-content: center;
+
+}
