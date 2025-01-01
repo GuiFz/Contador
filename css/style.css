@@ -62,8 +62,8 @@ main{
     display: flex;
     position: absolute;
 
-    width: 2%;
-    height: 4%;
+    width: 30px;
+    height: 40px;
 
     top: 10px;
     left: 10px;
@@ -111,7 +111,7 @@ main{
     background-color: var(--main-color, #FFF);
 }
 #infoPopup button{
-    font-size: 1.7rem;
+    font-size: 1.7vw;
     
     background-color: transparent;
     border: none;
@@ -162,3 +162,5 @@ main{
     justify-content: center;
 
 }
+
+/* @import url('responsive.css'); */

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px) {
+    #info{
+        top: 20px;
+        left: 20px;
+    }
+    
+    #themeColor{
+        top: 70px;
+        left: 20px;
+    }
+
+    #restart{
+        top: 120px;
+        left: 20px;
+    }
+}
