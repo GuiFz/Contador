@@ -34,6 +34,15 @@ function numberReduce() {
 }
 // Função que diminui o número - Fim
 
+// Função que reinicia o número - Início
+function numberRestart() {
+    number = 0;
+    document.getElementById("number").textContent = number;
+    
+}
+document.getElementById("restart").addEventListener("click", numberRestart);
+// Função que reinicia o número - Fim
+
 // ======================= Funções - Fim =======================
 
 
@@ -72,7 +81,7 @@ document.getElementById("closeBtn").addEventListener("click", function () {
     popup.style.display = "none";
 
 })
-// ======================= PopUp informações - Início =======================
+// ======================= PopUp informações - Fim =======================
 
 
 // ======================= Eventos de Teclado - Início =======================
@@ -88,6 +97,7 @@ document.addEventListener("keydown", function (event) {
     }
 })
 // ======================= Eventos de Teclado - Fim =======================
+
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         console.clear();

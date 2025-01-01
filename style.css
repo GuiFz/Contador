@@ -89,6 +89,11 @@ main{
     left: 60px;
 }
 
+#restart{
+    top: 10px;
+    left: 110px;
+}
+
 #infoPopup{
     display:none;
     width: 55%;
